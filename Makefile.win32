@@ -1,0 +1,27 @@
+# TI-99/sim Makefile for Win32
+
+install:
+	strip src/sdl/ti99sim-sdl.exe -o ti99sim-sdl.exe
+	strip src/util/convert-ctg.exe -o convert-ctg.exe
+	strip src/util/decode.exe -o decode.exe
+	strip src/util/disk.exe -o disk.exe
+	strip src/util/dumpcpu.exe -o dumpcpu.exe
+	strip src/util/dumpgrom.exe -o dumpgrom.exe
+	strip src/util/dumpspch.exe -o dumpspch.exe
+	strip src/util/list.exe -o list.exe
+	strip src/util/mkspch.exe -o mkspch.exe
+	strip src/util/say.exe -o say.exe
+	strip src/console/ti99sim-console.exe -o ti99sim-console.exe
+	
+clean:
+	-rm -f *~ include/*~ doc/*~ *.exe
+	$(MAKE) -C src/core clean  
+	$(MAKE) -C src/console clean
+	$(MAKE) -C src/sdl clean
+	$(MAKE) -C src/util clean
+
+ti99sim:
+	$(MAKE) -C src/core
+	$(MAKE) -C src/console
+	$(MAKE) -C src/sdl
+	$(MAKE) -C src/util

@@ -1,0 +1,138 @@
+.hide            { display: none; color: white; }
+
+/* ----- Layout ----- */
+
+
+.header2         { padding: 5em 0 5em 0; }
+.title           { text-align: center; text-shadow: 0.1em 0.1em silver; }
+.sub-title       { text-align: center; }
+.toc             { margin: 6pt 0 6pt 0; float: right; }
+.toc1            { text-indent: 0.1in; }
+.toc2            { text-indent: 0.2in; }
+.indent          { margin: 0 0 0 0.2in; }
+.usage           { margin-left: 5%; margin-right: 5%; border: inset 2px; white-space: pre; }
+.release-date    { margin-left: -0.1in; }
+
+body             { margin: 2em 2em 2em 2em; }
+h1, h2, h3, h4   { clear:both; padding: 2pt 2pt 1pt 2pt; page-break-after: avoid; }
+h1               { margin: 12pt 0 6pt 0; border: solid 3px; }
+h2, h3, h4       { margin: 6pt 0 3pt 0;  border: solid 1px; }
+h2               { border: solid 2px; }
+p                { margin: 6pt 0 3pt 0; padding: 0 1em 0 1em; }
+div.toc          { margin: 10pt; padding: 5pt; }
+.toc p           { margin: 0; }
+.toc1, .toc2     { text-align: left; }
+
+p.indent         { margin: 0; text-indent: 0.2in; text-align: justify }
+p.indent + p.indent { margin-top: 6pt; }
+
+div.description  { padding: 0.2cm 1cm 0.2cm 1cm; }
+
+div.release      { margin: 12px 0 12px 0; padding: 0 0 0 0; border: solid 3px; }
+.version         { margin: 0 0 0 0; padding: 2px 5px 2px 5px; }
+.version p       { margin: 0 0 0 0; padding: 0 0 0 0; }
+div.changes      { margin: 0 0 0 0; padding: 8px 12px 8px 24px; }
+div.changes p    { margin: 0 0 0 0; padding: 0 0 0 0; }
+
+acronym          { cursor: help; text-decoration: none; border: none }
+
+img              { border: none; }
+.screen-dump     { border: 1px solid; margin: 8px 8px 8px 8px }
+
+div.header        { border-bottom-style: double; }
+div.body div.menu { position: absolute; left: 5px; width: 150px; height: auto }
+div.content       { margin-left: 155px; }
+div.footer        { text-align: center; border-top-style: double; }
+
+
+div.navigation    { padding: 8px; text-align: center; }
+div.menu          { padding: 10px 10px 10px 10px; }
+div.content       { padding: 4px 0 0 10px; }
+
+div.navigation a + a:before { content: " | " }
+
+div.menu a        { border: 2px solid; text-align: center; display: block; width: 140px; margin: 0 0 0 0; }
+div.menu a        { border-style: outset; padding: 0 1px 1px 0; }
+div.menu a:hover  { border-style: inset;  padding: 1px 0 0 1px; }
+
+h1, h2, h3        { padding: 5px 5px 5px 5px }
+h1:after, h2:after, h3:after { content: ":" }
+
+/* ----- Miscellaneous ----- */
+
+h1                { counter-increment: chapter; counter-reset: section; }
+h2                { counter-increment: section; }
+
+h1:before         { content: counter(chapter) ". "; }
+h2:before         { content: counter(chapter) "." counter(section) " "; }
+
+/* ----- Fonts ----- */
+
+.title           { font-size: 36pt; font-family: Impact; font-variant: small-caps; }
+.sub-title       { font-size: 8pt;  font-family: Verdana; }
+.toc             { font-size: 8pt; }
+.toc1            { font-size: 8pt;  font-family: verdana; font-weight: bold; }
+.toc2            { font-size: 8pt;  font-family: Verdana; }
+.usage           { font-size: 8pt;  font-family: Courier, monospaced; }
+.description     { font-size: 7pt;  font-family: Verdana, Arial, Helvetica, sans-serif; font-style: italic; }
+.notice          { font-style: italic; font-weight: bold; }
+.release-date    { font-style: italic; font-weight: bold; }
+
+body             { font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif; }
+h1               { font-size: 16pt; font-family: Arial; }
+h2               { font-size: 14pt; font-family: Arial; font-style: italic; }
+
+h3, h4           { font-size: 12pt; font-family: Arial; }
+h1, h2, h3, h4   { font-weight: bold; }
+pre              { font-size: 8pt; font-family: Courier, monospaced; line-height: 100%; }
+
+.version         { font-size: 12pt; font-weight: bold; }
+
+a:link           { text-decoration: none; font-weight: bold }
+a:visited        { text-decoration: none; font-weight: bold }
+a:active         { text-decoration: none; font-weight: bold }
+a:hover          { text-decoration: none; font-weight: bold }
+
+.copyright       { font-size: 8pt;  font-family: Arial, Helvetica, sans-serif; font-style: italic }
+
+div.menu a       { font-size: 14pt; }
+div.menu a       { font-variant: small-caps }
+
+/* ----- Colors ----- */
+
+body             { color: #000000; background-color: #f2f2da; }
+h1               { color: #3f3021; background-color: #8c8c69; border: 1px outset #8c8c46 }
+h2               { color: #5a442e; background-color: #b2b285; border: 1px outset #8c8c46 }
+h3               { color: #72573b; background-color: #cccc99; border: 1px outset #8c8c46 }
+
+a:link           { color: #996600; }
+a:visited        { color: #996633; }
+a:active         { color: #664400; }
+a:hover          { color: #664400; }
+a:before         { color: #664400; }
+
+acronym          { color: #664400; }
+
+.title           { color: #664c33; }
+.description     { color: #990000; }
+.toc             { background-color: #cccc99; border: 1px outset #8c8c46; }
+.copyright       { color: gray; }
+.screen-dump     { border-color: #000000; background-color: #00ccff; }
+.usage           { color: #ffffff; background-color: #000000; }
+.notice          { color: #ff0000; }
+.release-date    { color: #664c33; }
+
+div.release      { border-color: #cccc99; }
+.version         { color: #5a442e; background-color: #cccc99; }
+div.changes      { background-color: #e5e5ce; }
+
+div.description  { background-color: #e5e5ce; }
+
+div.menu a       { color: #5a442e; background-color: #8c8c69; border-color: #000000 }
+
+table            { text-align: center; border: 2px outset #664c33; background: #e5e5ce; }
+th               { padding: 2px; background-color: #cccc99; }
+tr+tr td         { margin: 0; border-top: 1px solid #000000; }
+td+td            { border-left: 1px solid #000000; }
+caption          { margin-top: 0.5em; font-style: italic; }
+td               { padding: 2px 4px 2px 4px; }

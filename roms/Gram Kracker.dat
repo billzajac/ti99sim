@@ -1,0 +1,43 @@
+[GRAM Kracker]
+; ROM 6
+; BANK 0 - RAMB
+; BANK 1 - RAMB
+; ROM 7
+; BANK 0 - RAMB
+; BANK 1 - RAMB
+; GROM 0
+; BANK 0 - RAMB
+; GROM 1
+; BANK 0 - RAMB
+; BANK 1 - ROM
+2000 AA 55 01 00 00 00 20 10 00 00 00 00 00 00 00 00 '.U.... .........' '..a```.p````````'
+2010 00 00 20 21 0C 47 52 41 4D 20 4B 52 41 43 4B 45 '.. !.GRAM KRACKE' '``..l...........'
+2020 52 BE AF 0F 4A 20 35 00 19 AF 0F 4B AF 0F 4A 31 'R...J 5....K..J1' '...o...`y.o..o..'
+  :
+  : Insert the rest of the ROM here
+  :
+3FD0 00 2B 0A 07 00 2B 0A 01 00 2A C2 0D 00 34 7A 00 '.+...+...*...4z.' '`.jg`.ja`."m`..`'
+3FE0 00 0E 00 2F EC 0F 00 30 64 00 00 0D 00 30 92 0E '.../...0d....0..' '`n`.Lo`..``m`..n'
+3FF0 00 2F EC 0F 00 30 7E 00 00 00 00 50 49 4F 2E 10 './...0~....PIO..' '`.Lo`..````....p'
+; GROM 2
+; BANK 0 - RAMB
+; BANK 1 - ROM
+4000 42 6C 41 60 42 27 43 44 40 1E 41 74 41 D7 45 E3 'BlA`B'CD@.AtA.E.' '.........~...7.C'
+4010 49 56 41 CF 46 FC 46 41 47 4C 4B FC 48 2B 06 49 'IVA.F.FAGLK.H+.I' '.../.\.....\..f.'
+4020 93 77 DE 06 49 B1 77 DE D6 42 B5 40 F5 0F 1B 06 '.w..I.w..B.@....' '..>f...>6...Uo{f'
+  :
+  : Insert the rest of the ROM here
+  :
+5FD0 2F BF 5C EE FF 5C 26 78 4F F7 F3 07 7C 7F 4F EC '/.\..\&xO...|.O.' '...N_....WSg...L'
+5FE0 DF B1 5D 4E 6F FE A7 7C 06 38 4F F5 B7 5C 00 08 '..]No..|.8O..\..' '?....^..f..U..`h'
+5FF0 4F D4 BD 5E 6E A5 5E 5C 70 03 34 5E EF FF FF 7E 'O..^n.^\p.4^...~' '.4.......c..O__.'
+; GROM 3
+; BANK 0 - RAMB
+; GROM 4
+; BANK 0 - RAMB
+; GROM 5
+; BANK 0 - RAMB
+; GROM 6
+; BANK 0 - RAMB
+; GROM 7
+; BANK 0 - RAMB
