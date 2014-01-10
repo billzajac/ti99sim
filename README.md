@@ -1,11 +1,6 @@
 # TI-99/Sim
 a Texas Instruments Home Computer Emulator
 
-**Table of Contents:**
-
-* auto-gen TOC:
-{:toc}
-
 # Introduction
 
 This is the latest incarnation of an emulator for the TI-99/4A that I've been
