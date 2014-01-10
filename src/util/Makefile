@@ -8,10 +8,12 @@ XLIBS	+= `sdl-config --libs`
 endif
 
 ifeq ($(OS),OS_MACOSX)
-CFLAGS  += -I ~/Library/Frameworks/SDL.framework/Headers
-XLIBS   += -F ~/Library/Frameworks -framework SDL
-XLIBS   += -lobjc -framework Cocoa
-SDLLIBS := SDLMain.o
+CFLAGS	+= `sdl-config --cflags`
+XLIBS	+= `sdl-config --libs`
+#CFLAGS  += -I ~/Library/Frameworks/SDL.framework/Headers
+#XLIBS   += -F ~/Library/Frameworks -framework SDL
+#XLIBS   += -lobjc -framework Cocoa
+#SDLLIBS := SDLMain.o
 endif
 
 FILES	+= convert.cpp
